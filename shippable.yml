@@ -34,7 +34,7 @@ integrations:
       #on_pull_request: always  
       on_failure: never
       on_start: always 
-      on_success: never
+      on_success: change
       
     - integrationName: issue-sampleNod
       type: webhook
@@ -44,4 +44,4 @@ integrations:
       #on_pull_request: always  
       on_failure: never
       on_start: always 
-      on_success: never
+      on_success: change
