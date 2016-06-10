@@ -32,9 +32,9 @@ integrations:
         - title=Failure - $REPO_FULL_NAME - $BUILD_NUMBER
         - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) failed for $COMPARE_URL
       #on_pull_request: always  
-      on_failure: never
+      on_failure: change
       on_start: always 
-      on_success: change
+      on_success: never
       
     - integrationName: issue-sampleNod
       type: webhook
