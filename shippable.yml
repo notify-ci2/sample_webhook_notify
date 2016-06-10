@@ -3,7 +3,7 @@ language: node_js
 # Version number
 node_js:
   - 0.12
-  - 0.10 
+  #- 0.10 
   
   
 env:
@@ -31,7 +31,7 @@ integrations:
       payload:
         - title=Failure - $REPO_FULL_NAME - $BUILD_NUMBER
         - body=Shippable Run $BUILD_NUMBER ($BUILD_URL) failed for $COMPARE_URL
-      on_pull_request: always  
+      #on_pull_request: always  
       on_failure: always
       on_start: always 
       on_success: always 
